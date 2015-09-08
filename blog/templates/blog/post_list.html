@@ -1,8 +1,6 @@
 {% extends "blog/base.html" %}
 
-	<body>
-		
-		
+	{% block content %}
 		
             {% for post in posts %}
                 <div class="post">
@@ -13,8 +11,4 @@
                     <p>{{ post.text|linebreaks }}</p>
                 </div>
             {% endfor %}
-        
-
-	</body>
-
-
+        {% endblock content %}
